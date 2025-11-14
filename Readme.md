@@ -17,33 +17,6 @@ AuraSense detects human emotions from video, audio, and text and generates conte
 ### **Ablation Studies**
 
 
-
-## System Architecture
-
-                    Video Input
-                          ↓
-                    Preprocessing
-                          ↓
-                    Multimodal AI
-                          ↓
-            ┌────────┐ ┌───────┐ ┌─────────────┐
-            │ Vision │ │ Audio │ │ Text        │
-            │ Frames │ │ Stream│ │ Transcripts │
-            └────────┘ └───────┘ └─────────────┘
-                        ↓ ↓ ↓
-                  DINOv2 Wav2Vec2 + DistilBERT
-                  ViT-B14 Whisper
-                        ↓ ↓ ↓
-            └─────────────┼───────────────────┘
-                          ↓
-                    Fusion Model
-                    Cross-Attention
-                          ↓
-                    Emotion Prediction
-                      (5 Classes)
-
-
-
 ### **Multimodal Fusion**
 
     Trimodal Fusion Architecture
